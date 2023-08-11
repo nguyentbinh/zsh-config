@@ -136,6 +136,11 @@ alias grbd='git rebase origin/"$(git_develop_branch)"'
 alias grbm='git rebase origin/"$(git_main_branch)"'
 alias gcod='gbD "$(git_develop_branch)"; gco --track origin/"$(git_develop_branch)"'
 alias gcom='gbD "$(git_main_branch)"; gco --track origin/"$(git_main_branch)"'
+alias grhh='git reset --hard HEAD'
+alias grhd='git reset --hard origin/"$(git_develop_branch)"'
+alias grhm='git reset --hard origin/"$(git_main_branch)"'
+alias gdm='git diff origin/"$(git_main_branch)"'
+alias gdd='git diff origin/"$(git_develop_branch)"'
 
 eval "$(direnv hook zsh)"
 
